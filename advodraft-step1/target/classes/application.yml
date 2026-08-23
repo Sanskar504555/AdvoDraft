@@ -1,0 +1,28 @@
+# ═══════════════════════════════════════════════════════════════════
+# SPRING BOOT CONFIGURATION
+# ═══════════════════════════════════════════════════════════════════
+# WHAT: Controls how your application runs
+# WHY: Customize port, database, logging, etc.
+# FORMAT: YAML (indentation matters! Use spaces, not tabs)
+# ═══════════════════════════════════════════════════════════════════
+
+# Application name (shows up in logs)
+spring:
+  application:
+    name: advodraft-backend
+
+# Server configuration
+server:
+  port: 8080  # Your app runs on http://localhost:8080
+  
+# Logging - see what's happening
+logging:
+  level:
+    com.advodraft: INFO  # Show INFO level logs for your code
+    
+# ═══════════════════════════════════════════════════════════════════
+# INTERVIEW:
+# Q: What is application.yml?
+# A: "Configuration file for Spring Boot. Controls port, database 
+#     connection, logging levels, and other application settings."
+# ═══════════════════════════════════════════════════════════════════
